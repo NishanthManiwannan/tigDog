@@ -4,11 +4,11 @@
   height: 550px;
 }
 
-h1 {
+.big-heading {
   font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .container-fluid {
@@ -45,7 +45,9 @@ i {
   right: 30%;
 }
 
-@media (max-width : 820px) {
+/* make different responsive for different screen size */
+
+/* @media (max-width : 820px) {
   #title {
     background-color: rgb(221, 55, 55);
     color: white;
@@ -83,10 +85,32 @@ i {
     font-size: 3rem;
     line-height: 1.5;
     font-weight: 600;
+  } 
+}*/
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+    height: auto;
   }
 
+  .image {
+    transform: rotate(0);
+    width:50%;
+    z-index: -1;
+    margin-top: 20px;
+  }
 
+  .buttonContainer{
+    margin-top: 10px;
+  }
+
+  #cta{
+    padding: 30px;
+  }
 }
+
 /* -------------- */
 
 #features {
@@ -167,7 +191,7 @@ h2 {
 
 #cta{
   background-color: rgb(221, 55, 55);
-  padding: 50px 300px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -180,16 +204,13 @@ h3 {
   line-height: 80px;
 }
 
-.buttons{
-margin: auto 10px auto 10px;}
-
 .buttonContainer{
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 /* _---------------- */
 #footer{
   background-color: #fff;
-  padding: 150px 50px;
+  padding: 100px 50px;
   text-align: center;
 }
